@@ -1,0 +1,187 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.top-nav {
+  background-color: #222;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.nav-brand {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-buttons button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-buttons button:hover {
+  background-color: #333;
+}
+
+.App {
+  background-color: #333;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  color: #eee;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.control-group {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.controls label {
+  margin-right: 10px;
+  color: #ddd;
+}
+
+.controls select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #555;
+  background-color: #556b2f; /* Changed background color */
+  color: #fff;
+  margin-left: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  transition: background-color 0.3s ease; /* Added transition */
+}
+
+.controls select option {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Add hover effect to the options */
+.controls select option:hover {
+  background-color: #555;
+}
+
+.settings-icon {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2em;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s ease;
+  margin-left: 10px;
+}
+
+.settings-icon:hover {
+  transform: rotate(45deg);
+}
+
+.settings {
+  background-color: #444;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.settings label {
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+.settings input[type='checkbox'] {
+  margin-right: 8px;
+  transform: scale(1.2);
+}
+
+.generate-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #6a5acd, #7b68ee);
+  color: #fff;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+}
+
+.generate-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.result {
+  font-size: 1.3em;
+  margin-top: 30px;
+  color: #ddd;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.openCont {
+  display: block;
+}
+
+.closeCont {
+  display: none;
+}
